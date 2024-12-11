@@ -18954,12 +18954,12 @@ a.dropdown-item.active {
 
 .w3l-main-slider h3.title-hero-19 {
     color: var(--bs-white);
-    font-size: 30px;
+    font-size: 20px;
     text-transform: capitalize;
-    font-weight: 400;
+    font-weight: 500;
     border: none;
     text-shadow: rgb(0 0 0) 0px 0px 0px;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .w3l-main-slider h5 {
