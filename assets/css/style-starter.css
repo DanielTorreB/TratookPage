@@ -18954,7 +18954,7 @@ a.dropdown-item.active {
 
 .w3l-main-slider h3.title-hero-19 {
     color: var(--bs-white);
-    font-size: 20px;
+    font-size: 30px;
     text-transform: capitalize;
     font-weight: 500;
     border: none;
@@ -18986,7 +18986,7 @@ a.btn.btn-style.btn-banner:hover {
 
 @media (max-width: 1280px) {
     .w3l-main-slider h3.title-hero-19 {
-        font-size: 76px;
+        font-size: 30px;
         line-height: 86px;
     }
 
@@ -19001,7 +19001,7 @@ a.btn.btn-style.btn-banner:hover {
 
 @media (max-width: 1080px) {
     .w3l-main-slider h3.title-hero-19 {
-        font-size: 70px;
+        font-size: 30px;
         line-height: 80px;
     }
 
@@ -19026,7 +19026,7 @@ a.btn.btn-style.btn-banner:hover {
 
 @media (max-width: 1024px) {
     .w3l-main-slider h3.title-hero-19 {
-        font-size: 60px;
+        font-size: 30px;
         line-height: 70px;
     }
 }
@@ -19085,7 +19085,7 @@ a.btn.btn-style.btn-banner:hover {
 
 @media (max-width: 600px) {
     .w3l-main-slider h3.title-hero-19 {
-        font-size: 44px;
+        font-size: 30px;
         line-height: 54px;
         margin: 10px 0 10px;
     }
@@ -19095,7 +19095,7 @@ a.btn.btn-style.btn-banner:hover {
 
 @media (max-width: 440px) {
     .w3l-main-slider h3.title-hero-19 {
-        font-size: 38px;
+        font-size: 30px;
         line-height: 48px;
         margin: 10px 0 10px;
     }
