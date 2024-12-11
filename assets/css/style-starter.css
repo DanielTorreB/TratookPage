@@ -18962,6 +18962,16 @@ a.dropdown-item.active {
     line-height: 40px;
 }
 
+.w3l-main-slider h3.title-hero-20 {
+    color: var(--bs-white);
+    font-size: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: none;
+    text-shadow: rgb(0 0 0) 0px 0px 0px;
+    line-height: 40px;
+}
+
 .w3l-main-slider h5 {
     color: var(--bs-white);
     font-size: 13px;
