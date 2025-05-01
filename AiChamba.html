@@ -1,0 +1,238 @@
+<!-- Designed by: Daniel Torreblanca Alvarez -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tratook - Vacantes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar-container" style="animation: navbarFade 0.6s ease forwards; position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(12px); background-color: rgba(255, 255, 255, 0.85); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+    <div class="navbar-left">
+      <div class="logo">Tra<span>took</span></div>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="AiChamba.html">AiChamba</a>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <!-- <a href="generaTuCV.html" class="btn-demo" style="text-decoration: none;">Genera tu CV</a>-->
+      <a href="contactanos.html" class="btn-login" style="text-decoration: none;">Contáctanos</a>
+    </div>
+  </div>
+
+  <!-- ESTADÍSTICAS DESTACADAS -->
+<section style="padding: 40px; background-color: #f4f4f4; text-align: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+  <div style="flex: 1 1 200px;">
+    <h2 style="margin: 0; font-size: 32px; color: #0F4C81;">Postulaciones</h2>
+    <p style="margin: 0; font-weight: bold;">Rápidas</p>
+  </div>
+  <div style="flex: 1 1 200px;">
+    <h2 style="margin: 0; font-size: 32px; color: #0F4C81;">Empresas</h2>
+    <p style="margin: 0; font-weight: bold;">Aliadas</p>
+  </div>
+  <div style="flex: 1 1 200px;">
+    <h2 style="margin: 0; font-size: 32px; color: #0F4C81;">97%</h2>
+    <p style="margin: 0; font-weight: bold;">Colocación exitosa</p>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section style="padding: 60px 40px; text-align: center; background-color: #ffffff;">
+  <h2 style="font-size: 28px; margin-bottom: 40px;">Lo que dicen nuestros candidatos</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; max-width: 1100px; margin: auto;">
+    <div style="background-color: #f9f9f9; padding: 20px 24px; border-radius: 12px; max-width: 320px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <p>“Gracias a Tratook encontré un trabajo cerca de casa. Me contactaron el mismo día.”</p>
+      <strong>- Juan M.</strong>
+    </div>
+    <div style="background-color: #f9f9f9; padding: 20px 24px; border-radius: 12px; max-width: 320px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <p>“Me postulé desde whatsapp. Rápido y sin complicaciones.”</p>
+      <strong>- Karla S.</strong>
+    </div>
+    <div style="background-color: #f9f9f9; padding: 20px 24px; border-radius: 12px; max-width: 320px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+      <p>“La selección con Inteligencia Artificial fue eficiente. Los candidatos se adecuan a lo que les pedí”</p>
+      <strong>- Roberto L.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Explora nuestras vacantes</h1>
+      <p>Encuentra el trabajo que estás buscando. Postúlate fácil y rápido con Tratook.</p>
+    </div>
+  </section>
+
+  <!-- BUSCADOR Y FILTROS -->
+  <section style="padding: 40px; text-align: center;">
+    <input type="text" placeholder="Buscar por puesto o zona..." style="padding: 12px 20px; border-radius: 30px; border: 1px solid #ccc; max-width: 300px;">
+    <button class="btn-iniciar" style="margin-left: 10px;">Buscar</button>
+    <div style="margin-top: 20px;">
+      <button class="btn-demo">Limpieza</button>
+      <button class="btn-demo">Seguridad</button>
+      <button class="btn-demo">Cocina</button>
+      <button class="btn-demo">Choferes</button>
+    </div>
+  </section>
+
+  <section class="help-cards" style="padding: 60px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1200px; margin: auto;">
+    <div class="help-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column;">
+      <div style="background-color: #191919; height: 160px;"></div>
+      <div class="help-info" style="padding: 24px;">
+        <h3 style="margin-top: 0;">¡Tu vacante aquí!</h3>
+        <p>📍 Zona: Dirección de tu vacante</p>
+        <p>🕒 Horario</p>
+        <p>💵 Salario</p>
+        <a href="#">Ver más →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- VACANTES LISTADO -->
+
+    <!--
+    <section class="help-cards" style="padding: 60px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; max-width: 1200px; margin: auto;">
+    <div class="help-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column;">
+      <div style="background-color: #191919; height: 160px;"></div>
+      <div class="help-info" style="padding: 24px;">
+        <h3 style="margin-top: 0;">Ayudante general</h3>
+        <p>📍 Zona: Iztapalapa</p>
+        <p>🕒 Turno completo</p>
+        <p>💵 $8,000 MXN</p>
+        <a href="#">Ver más →</a>
+      </div>
+    </div>
+    <div class="help-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column;">
+      <div style="background-color: #191919; height: 160px;"></div>
+      <div class="help-info" style="padding: 24px;">
+        <h3 style="margin-top: 0;">Guardia de seguridad</h3>
+        <p>📍 Zona: Tláhuac</p>
+        <p>🕒 Turno nocturno</p>
+        <p>💵 $9,200 MXN</p>
+        <a href="#">Ver más →</a>
+      </div>
+    </div>
+    <div class="help-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column;">
+      <div style="background-color: #191919; height: 160px;"></div>
+      <div class="help-info" style="padding: 24px;">
+        <h3 style="margin-top: 0;">Chofer repartidor</h3>
+        <p>📍 Zona: Nezahualcóyotl</p>
+        <p>🕒 Lunes a sábado</p>
+        <p>💵 $10,000 MXN</p>
+        <a href="#">Ver más →</a>
+      </div>
+    </div>
+    <div class="help-card" style="background: white; border-radius: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column;">
+      <div style="background-color: #191919; height: 160px;"></div>
+      <div class="help-info" style="padding: 24px;">
+        <h3 style="margin-top: 0;">Ayudante de cocina</h3>
+        <p>📍 Zona: Benito Juárez</p>
+        <p>🕒 Turno matutino</p>
+        <p>💵 $7,500 MXN</p>
+        <a href="#">Ver más →</a>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- FOOTER -->
+  <footer style="background-color: #111; color: white; padding: 60px 40px;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+      <div style="flex: 1 1 100%; font-size: 28px; font-weight: bold;">
+        Dónde Cada Búsqueda Termina En <br><span style="color: #fff;">Éxito</span>
+      </div>
+  
+      <div style="flex: 1 1 180px;">
+        <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Dirección</h4>
+        <p style="color: #00AE8E; margin: 0;">CDMX, México</p>
+        <p style="color: #00AE8E; margin: 0;">Tratook.com</p>
+        <p style="color: #00AE8E; margin: 0;">Todos los derechos reservados</p>
+      </div>
+  
+      <div style="flex: 1 1 180px;">
+        <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Estamos A Un ToOK</h4>
+        <p style="color: #00AE8E; margin: 0;">
+          <a href="https://api.whatsapp.com/send?phone=525516221655" target="_blank" style="color: #00AE8E; text-decoration: none;">+55 1622 1655</a>
+        </p>
+        <p style="color: #00AE8E; margin: 0;">
+          <a href="mailto:hola@tratook.com" style="color: #00AE8E; text-decoration: none;">hola@tratook.com</a>
+        </p>
+      </div>
+  
+      <div style="flex: 1 1 180px;">
+        <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Enlaces</h4>
+        <p style="margin: 0;"><a href="index.html" style="color: #00AE8E; text-decoration: none;">Inicio</a></p>
+        <p style="margin: 0;"><a href="AiChamba.html" style="color: #00AE8E; text-decoration: none;">AiChamba</a></p>
+        <p style="margin: 0;" title="Muy pronto disponible">generaTuCV (Próximamente)</p>
+        <p style="margin: 0;"><a href="contactanos.html" style="color: #00AE8E; text-decoration: none;">Contáctanos</a></p>
+      </div>
+  
+      <div style="flex: 1 1 180px;">
+        <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Síguenos</h4>
+        <div style="display: flex; gap: 10px;">
+          <a href="https://www.facebook.com/people/Tratook/61568657853366/?mibextid=ZbWKwL" target="_blank" style="text-decoration: none;">
+            <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+              <span style="color: #0F4C81; font-size: 18px;">f</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/tratook.mx/" target="_blank" style="text-decoration: none;">
+            <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+              <span style="color: #0F4C81; font-size: 18px;">i</span>
+            </div>
+          </a>
+          <a href="https://mx.linkedin.com/company/tratook" target="_blank" style="text-decoration: none;">
+            <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+              <span style="color: #0F4C81; font-size: 18px;">in</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <p style="text-align: center; color: #00AE8E; margin-top: 40px; font-size: 14px;">
+      ©Tratook 2024 || All rights reserved || Designed by TI TRATOOK
+    </p>
+  </footer>
+  
+
+<!-- BLOQUE REGISTRO DE CANDIDATO -->
+<section style="padding: 60px 40px; text-align: center; background-color: #0F4C81; color: white;">
+  <h2 style="font-size: 30px; margin-bottom: 16px;">¿No encontraste la vacante perfecta?</h2>
+  <p style="font-size: 18px; margin-bottom: 24px;">Ponte en contacto con nosotros y te avisaremos cuando tengamos una ideal para ti.</p>
+  <a href="https://api.whatsapp.com/send?phone=525516221655" target="_blank" style="text-decoration: none;">
+    <button class="btn-demo" style="background-color: #00AE8E; padding: 12px 28px; font-size: 16px;">Whatsapp</button>
+  </a>
+</section>
+
+
+<!-- MODAL -->
+<div id="modal-vacante" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); backdrop-filter: blur(4px); z-index: 2000; align-items: center; justify-content: center;">
+  <div style="background: white; padding: 32px; max-width: 500px; border-radius: 12px; position: relative;">
+    <button onclick="document.getElementById('modal-vacante').style.display='none'" style="position: absolute; top: 10px; right: 14px; background: none; border: none; font-size: 22px; cursor: pointer;">&times;</button>
+    <h2>Detalles de la vacante</h2>
+    <p><strong>Puesto:</strong> Aquí irá el puesto de tu vacante</p>
+    <p><strong>Zona:</strong> Lugar de tu vacante</p>
+    <p><strong>Jornada:</strong> Horario y días</p>
+    <p><strong>Salario:</strong> $$$</p>
+    <p><strong>Requisitos:</strong> Mayor de edad, disponibilidad inmediata.</p>
+    <button class="btn-iniciar" style="margin-top: 20px;">Postularme</button>
+  </div>
+</div>
+
+<script>
+  const botonesVerMas = document.querySelectorAll(".help-card a");
+  botonesVerMas.forEach(boton => {
+    boton.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.getElementById("modal-vacante").style.display = "flex";
+    });
+  });
+</script>
+
+</body>
+</html>

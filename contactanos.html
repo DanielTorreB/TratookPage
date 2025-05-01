@@ -1,0 +1,139 @@
+<!-- Designed by: Daniel Torreblanca Alvarez -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos | Tratook</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar-container">
+  <div class="navbar-left">
+    <div class="logo">Tra<span>took</span></div>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="AiChamba.html">AiChamba</a>
+    </div>
+  </div>
+  <div class="navbar-right">
+<!-- <a href="generaTuCV.html" class="btn-demo" style="text-decoration: none;">Genera tu CV</a>-->
+    <a href="contactanos.html" class="btn-login" style="text-decoration: none;">Contáctanos</a>
+  </div>
+</div>
+
+<!-- FORMULARIO DE CONTACTO -->
+<section style="padding: 60px 20px; max-width: 800px; margin: auto;" data-aos="fade-up">
+  <div class="contact-form">
+    <h1 style="text-align: center; font-size: 32px; margin-bottom: 40px;">Ponte en contacto con nosotros</h1>
+    <form id="form-contacto" style="display: flex; flex-direction: column; gap: 20px;">
+      <div class="form-row">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+        <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+      </div>
+      <input type="tel" name="telefono" placeholder="Tu número de contacto">
+      <textarea name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button class="btn-demo" type="submit" style="align-self: flex-start;">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background-color: #111; color: white; padding: 60px 40px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+    <div style="flex: 1 1 100%; font-size: 28px; font-weight: bold;">
+      Dónde Cada Búsqueda Termina En <br><span style="color: #fff;">Éxito</span>
+    </div>
+
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Dirección</h4>
+      <p style="color: #00AE8E; margin: 0;">CDMX, México</p>
+      <p style="color: #00AE8E; margin: 0;">Tratook.com</p>
+      <p style="color: #00AE8E; margin: 0;">Todos los derechos reservados</p>
+    </div>
+
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Estamos A Un ToOK</h4>
+      <p style="color: #00AE8E; margin: 0;">
+        <a href="https://api.whatsapp.com/send?phone=525516221655" target="_blank" style="color: #00AE8E; text-decoration: none;">+55 1622 1655</a>
+      </p>
+      <p style="color: #00AE8E; margin: 0;">
+        <a href="mailto:hola@tratook.com" style="color: #00AE8E; text-decoration: none;">hola@tratook.com</a>
+      </p>
+    </div>
+
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Enlaces</h4>
+      <p style="margin: 0;"><a href="index.html" style="color: #00AE8E; text-decoration: none;">Inicio</a></p>
+      <p style="margin: 0;"><a href="AiChamba.html" style="color: #00AE8E; text-decoration: none;">AiChamba</a></p>
+      <p style="margin: 0;" title="Muy pronto disponible">generaTuCV (Próximamente)</p>
+      <p style="margin: 0;"><a href="contactanos.html" style="color: #00AE8E; text-decoration: none;">Contáctanos</a></p>
+    </div>
+
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Síguenos</h4>
+      <div style="display: flex; gap: 10px;">
+        <a href="https://www.facebook.com/people/Tratook/61568657853366/?mibextid=ZbWKwL" target="_blank" style="text-decoration: none;">
+          <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: #0F4C81; font-size: 18px;">f</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/tratook.mx/" target="_blank" style="text-decoration: none;">
+          <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: #0F4C81; font-size: 18px;">i</span>
+          </div>
+        </a>
+        <a href="https://mx.linkedin.com/company/tratook" target="_blank" style="text-decoration: none;">
+          <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: #0F4C81; font-size: 18px;">in</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align: center; color: #00AE8E; margin-top: 40px; font-size: 14px;">
+    ©Tratook 2024 || All rights reserved || Designed by TI TRATOOK
+  </p>
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  const formContacto = document.getElementById("form-contacto");
+
+  formContacto.addEventListener("submit", function(event) {
+    event.preventDefault(); // Evitar el envío normal
+
+    const nombre = document.querySelector('input[name="nombre"]').value.trim();
+    const correo = document.querySelector('input[name="correo"]').value.trim();
+    const telefono = document.querySelector('input[name="telefono"]').value.trim();
+    const mensaje = document.querySelector('textarea[name="mensaje"]').value.trim();
+
+    if (!nombre || !correo || !mensaje) {
+      alert("Por favor completa todos los campos obligatorios antes de enviar.");
+      return;
+    }
+
+    const asunto = `Información sobre Tratook: ${nombre}`;
+    const cuerpo = `Nombre: ${nombre} Email: ${correo} Teléfono: ${telefono}  Mensaje:  ${mensaje}`;
+
+    const mailtoLink = `mailto:hola@tratook.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+
+    window.location.href = mailtoLink;
+
+    formContacto.reset();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!-- Designed by: Daniel Torreblanca Alvarez -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tratook - Ayuda</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: white; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+  <div style="width: 50px; height: 50px; border: 5px solid #0F4C81; border-top: 5px solid #00AE8E; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+</div>
+
+<!-- NAVBAR -->
+<div class="navbar-container" style="animation: navbarFade 0.6s ease forwards; position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(12px); background-color: rgba(255, 255, 255, 0.85); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+    <div class="navbar-left">
+      <div class="logo">Tra<span>took</span></div>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="AiChamba.html">AiChamba</a>
+      </div>
+    </div>
+    <div class="navbar-right">
+<!-- <a href="generaTuCV.html" class="btn-demo" style="text-decoration: none;">Genera tu CV</a>-->
+      <a href="contactanos.html" class="btn-login" style="text-decoration: none;">Contáctanos</a>
+    </div>
+  </div>
+
+<!-- HERO DE AYUDA -->
+<section class="hero-section" style="text-align: center; padding: 80px 20px;" data-aos="fade-up">
+  <h1 style="font-size: 36px;">¿En qué podemos ayudarte?</h1>
+  <p style="font-size: 18px; color: #555; margin-top: 12px;">Aquí encontrarás toda la información que necesitas para usar Tratook</p>
+</section>
+
+<!-- FAQ -->
+<section style="padding: 60px 20px; background-color: #f8f8f8;" data-aos="fade-up" data-aos-delay="100">
+  <h2 style="text-align: center; margin-bottom: 40px;">Preguntas Frecuentes</h2>
+  <div style="max-width: 800px; margin: auto;">
+    <details style="margin-bottom: 20px;">
+      <summary><strong>¿Cómo postulo a una vacante?</strong></summary>
+      <p style="margin-top: 10px;">Solo debes ingresar a AiChamba, seleccionar la vacante y presionar "Postularme".</p>
+    </details>
+    <details style="margin-bottom: 20px;">
+      <summary><strong>¿Cómo puedo generar mi CV?</strong></summary>
+      <p style="margin-top: 10px;">En la sección “Genera tu CV” completa el formulario y descarga tu PDF automáticamente.</p>
+    </details>
+    <details style="margin-bottom: 20px;">
+      <summary><strong>¿Puedo modificar mi postulación?</strong></summary>
+      <p style="margin-top: 10px;">Por ahora no, pero puedes postularte a nuevas vacantes sin problema.</p>
+    </details>
+    <details>
+      <summary><strong>¿Cómo contacto al soporte?</strong></summary>
+      <p style="margin-top: 10px;">Utiliza el botón de “Contáctanos” en el menú o envíanos un correo a hola@tratook.com</p>
+    </details>
+  </div>
+</section>
+
+<!-- FORMULARIO DE CONTACTO -->
+<section style="padding: 60px 20px; max-width: 800px; margin: auto;" data-aos="fade-up" data-aos-delay="200">
+  <h2 style="text-align: center; margin-bottom: 40px;">¿No encontraste lo que buscabas?</h2>
+  <form style="display: flex; flex-direction: column; gap: 20px;">
+    <input type="text" placeholder="Tu nombre" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
+    <input type="email" placeholder="Tu correo electrónico" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
+    <textarea rows="5" placeholder="¿Cómo podemos ayudarte?" required style="padding: 12px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+    <button type="submit" class="btn-demo" style="align-self: flex-start;">Enviar Mensaje</button>
+  </form>
+</section>
+
+<!-- TÉRMINOS Y CONDICIONES -->
+<section style="padding: 60px 20px; max-width: 800px; margin: auto;" data-aos="fade-up" data-aos-delay="300">
+  <h1 style="text-align: center; margin-bottom: 40px;">Términos y Condiciones</h1>
+  <p style="text-align: center;">El uso de la plataforma Tratook implica la aceptación de nuestros términos y condiciones. Para más información, contáctanos directamente.</p>
+</section>
+
+<!-- FOOTER -->
+<footer style="background-color: #111; color: white; padding: 60px 40px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+    <div style="flex: 1 1 100%; font-size: 28px; font-weight: bold;">
+      Dónde Cada Búsqueda Termina En <br><span style="color: #fff;">Éxito</span>
+    </div>
+
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Dirección</h4>
+      <p style="color: #00AE8E; margin: 0;">CDMX, México</p>
+      <p style="color: #00AE8E; margin: 0;">Tratook.com</p>
+      <p style="color: #00AE8E; margin: 0;">Todos los derechos reservados</p>
+    </div>
+
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Estamos A Un ToOK</h4>
+      <p style="color: #00AE8E; margin: 0;">
+        <a href="https://api.whatsapp.com/send?phone=525516221655" target="_blank" style="color: #00AE8E; text-decoration: none;">+55 1622 1655</a>
+      </p>
+      <p style="color: #00AE8E; margin: 0;">
+        <a href="mailto:hola@tratook.com" style="color: #00AE8E; text-decoration: none;">hola@tratook.com</a>
+      </p>
+    </div>
+
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Enlaces</h4>
+      <p style="margin: 0;"><a href="index.html" style="color: #00AE8E; text-decoration: none;">Inicio</a></p>
+      <p style="margin: 0;"><a href="AiChamba.html" style="color: #00AE8E; text-decoration: none;">AiChamba</a></p>
+      <p style="margin: 0;" title="Muy pronto disponible">generaTuCV (Próximamente)</p>
+      <p style="margin: 0;"><a href="contactanos.html" style="color: #00AE8E; text-decoration: none;">Contáctanos</a></p>
+    </div>
+
+    <div style="flex: 1 1 180px;">
+      <h4 style="color: white; font-weight: bold; margin-bottom: 12px;">Síguenos</h4>
+      <div style="display: flex; gap: 10px;">
+        <a href="https://www.facebook.com/people/Tratook/61568657853366/?mibextid=ZbWKwL" target="_blank" style="text-decoration: none;">
+          <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: #0F4C81; font-size: 18px;">f</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/tratook.mx/" target="_blank" style="text-decoration: none;">
+          <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: #0F4C81; font-size: 18px;">i</span>
+          </div>
+        </a>
+        <a href="https://mx.linkedin.com/company/tratook" target="_blank" style="text-decoration: none;">
+          <div style="width: 36px; height: 36px; background-color: white; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: #0F4C81; font-size: 18px;">in</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align: center; color: #00AE8E; margin-top: 40px; font-size: 14px;">
+    ©Tratook 2024 || All rights reserved || Designed by TI TRATOOK
+  </p>
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    loader.style.opacity = '0';
+    loader.style.visibility = 'hidden';
+    loader.style.transition = 'opacity 0.5s ease';
+  });
+</script>
+
+</body>
+</html>

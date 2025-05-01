@@ -1,0 +1,523 @@
+/* Designed by: Daniel Torreblanca Alvarez */
+
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700&display=swap');
+
+/* =======================
+   ESCALA TIPOGRÁFICA CON WIX MADEFOR DISPLAY
+======================= */
+
+:root {
+  --font-primary: 'Wix Madefor Display', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* UTILIDADES TIPOGRÁFICAS */
+.fw-regular { font-weight: var(--font-weight-regular); }
+.fw-medium  { font-weight: var(--font-weight-medium); }
+.fw-semibold{ font-weight: var(--font-weight-semibold); }
+.fw-bold    { font-weight: var(--font-weight-bold); }
+
+/* ESCALA DE TEXTO */
+.text-display-lg {
+  font-size: 42px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+}
+
+.text-display-md {
+  font-size: 32px;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.3;
+}
+
+.text-title {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.4;
+}
+
+.text-subtitle {
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+}
+
+.text-caption {
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.4;
+}
+
+/* =======================
+   RESET & BASE
+======================= */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: white;
+    color: #191919;
+  }
+
+  /* =======================
+   ANIMACIONES
+======================= */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* NAVBAR FADE */
+@keyframes navbarFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* IMAGEN HERO: Fade + Slide */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase para aplicar a la imagen */
+.fade-slide {
+  animation: fadeSlide 0.8s ease;
+}
+
+  
+  /* =======================
+     NAVBAR
+  ======================= */
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+  }
+  
+  .navbar-left,
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    background-color: #191919;
+    border-radius: 40px;
+    padding: 10px 24px;
+  }
+  
+  .navbar-left {
+    gap: 30px;
+  }
+  
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo span {
+    color: #00AE8E;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00AE8E;
+  }
+  
+  .navbar-right {
+    gap: 12px;
+  }
+  
+  .btn-demo {
+    background-color: #00AE8E;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-login {
+    background-color: #0F4C81;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-demo:hover,
+  .btn-login:hover {
+    opacity: 0.85;
+  }
+  
+  /* =======================
+     HERO SECTION
+  ======================= */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    max-width: 480px;
+  }
+  
+  .hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .btn-iniciar {
+    background-color: #00AE8E;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-iniciar:hover {
+    background-color: #008f75;
+  }
+  
+  .hero-image {
+    width: 600px;
+    max-width: 100%;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 360px;
+    background-color: #191919;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 18px;
+    font-style: italic;
+    opacity: 0.8;
+  }
+  
+  /* =======================
+     HELP SECTION
+  ======================= */
+  .help-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .help-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .help-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .help-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .help-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .help-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .help-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+  
+  .help-info {
+    padding: 24px;
+    text-align: left;
+  }
+  
+  .help-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .help-info p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+  
+  .help-info a {
+    color: #e53935;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .help-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* =======================
+     SERVICIOS SECTION
+  ======================= */
+  .servicios-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f5f8f7;
+  }
+  
+  .servicios-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .servicios-section small {
+    display: block;
+    color: #00AE8E;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .servicio-box {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transform: translateY(0);
+    border: 1px solid transparent;
+  }
+
+  .servicio-box:hover {
+    background-color: #e0f7f4; /* Tonalidad suave del verde institucional */
+    border: 1px solid #00AE8E;
+    box-shadow: 0 10px 24px rgba(0, 174, 142, 0.2);
+    transform: translateY(-6px);
+  }
+  
+  .servicio-box h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  
+  .servicio-box p {
+    font-size: 15px;
+    color: #00AE8E;
+  }
+  
+  .servicio-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .servicio-box:hover .servicio-icon {
+    transform: scale(1.2) rotate(3deg);
+  }
+  
+  /* =======================
+     MEDIA QUERIES
+  ======================= */
+  @media (max-width: 900px) {
+    .navbar-container {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .hero-section {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .navbar-left,
+    .navbar-right {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .hero-image,
+    .help-cards,
+    .servicios-grid {
+      width: 100%;
+      grid-template-columns: 1fr !important;
+    }
+  }  
+
+  .btn-demo, .btn-login {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-demo:hover, .btn-login:hover {
+    box-shadow: 0 4px 12px rgba(0, 174, 142, 0.4);
+    transform: translateY(-2px);
+  }
+  
+
+  
+  /* =======================
+     Animaciones del formulario de contacto
+  ======================= */
+
+  .contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  input, textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #00AE8E;
+    box-shadow: 0 0 8px rgba(0, 174, 142, 0.3);
+    outline: none;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  @media(min-width: 768px) {
+    .form-row {
+      flex-direction: row;
+    }
+    .form-row > * {
+      flex: 1;
+    }
+  }
+  
+  .btn-demo {
+    background: linear-gradient(135deg, #00AE8E, #0F4C81);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-demo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 174, 142, 0.4);
+  }
+  
+  #modal-confirmacion {
+    transition: all 0.3s ease;
+  }
+  
+
+  /* =======================
+     Planes y precios
+  ======================= */
+
+  .plan-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    border-radius: 16px;
+    padding: 24px;
+    background: linear-gradient(to bottom, #0F4C81, #00AE8E);
+    position: relative;
+  }
+  
+  .plan-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 174, 142, 0.3);
+  }
+  
+  .plan-card:nth-child(2) {
+    transform: translateY(-8px);
+  }
+  
+  .badge-popular {
+    background-color: #FFD700;
+    color: black;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  
